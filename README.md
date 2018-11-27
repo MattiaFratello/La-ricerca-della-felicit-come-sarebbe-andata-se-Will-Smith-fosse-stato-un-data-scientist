@@ -7,3 +7,5 @@ what heuristics were followed and how the audience reacted to them (via question
 
 We used Python and Tableau for the creation of the Visualizations.
 The datasets used were extracted whith API or Web Scraping.
+
+@@@ For looking at the project you have to download the entire folder "progetto finito" and then open the html on your computer @@@
