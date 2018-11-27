@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400i,700,700i|Source+Code+Pro|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Data Viz Lab</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+    <!-- Intro con titolo e immagine. Inserire immagine in /media/ con il nome cover.png
+    Al posto dei segna posto aggiungere il vostro nome e matricola negli <span> -->
+      <div class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text">
+              <h5 class="text-center">UNIMIB - 2017/2018</h5>
+              <h1 class="text-center">La ricerca della felicità: come sarebbe andata se Will Smith fosse stato un data scientist<a href=https://it.wikipedia.org/wiki/La_ricerca_della_felicit%C3%A0>*</a></h1>
+              <h4 class="text-center">Un progetto di 
+                <span class="name">Sebastiano Bowen (718327)</span>, 
+                <span class="name">Leonardo Dal Tio (766302)</span>, 
+                <span class="name">Mattia Fratello (785142)</span>,  
+                <span class="name">Paolo Merola (834098)</span> e
+                <span class="name">Pierluigi Vagliante (821719)</span></h5>
+              </div>
+          </div>
+          </div>
+      </div>
+
+
+
+      <!-- Primo blocco di testo -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h5></h5>
+            <p>
+				&nbsp;&nbsp;L’uomo non nasce con le radici, anzi, è un dato di fatto che l’essere umano si sia da sempre spostato per sopravvivere o anche solo per cercare condizioni di vita più favorevoli. I flussi migratori che dall’Africa raggiungono l’Europa di cui si parla quotidianamente oggigiorno  non sono semplicemente un fenomeno curioso o peculiare dell’epoca in cui viviamo, ma l’ennesima manifestazione di un comportamento tipicamente umano che ha contribuito alla fortuna della nostra specie. Senza dover guardare altre nazioni, è facile constatare che anche gli Italiani si sono spostati durante la loro storia: tra il 1861 e il 1985 sono emigrati circa 18.725.000 italiani e attualmente gli italiani oriundi sono stimati tra i 60 e gli 80 milioni (il dato colpisce ancor di più considerando il fatto che gli Italiani abitanti in italia sono circa 60 milioni). Anche in anni più recenti sono circa 250.000 all'anno gli italiani a lasciare il Bel Paese per cercare fortuna altrove.<br>&nbsp;&nbsp;Le persone dunque si spostano, ovunque e da sempre, ma perché lo fanno? Generalmente per stare meglio, per cercare una vita migliore di quella che lasciano, in ultima istanza per essere felici. Ciascuno di noi ha una propria idea ingenua su quali siano i posti in cui si vive meglio o peggio, ma la percezione comune può rivelarsi uno strumento non sufficientemente preciso. Ricerca empirica e un approccio data driven possono venirci in aiuto e darci una visione più approfondita e autentica per comprendere correttamente quali sono i paesi dove si è più felici e si vive meglio.<br>&nbsp;&nbsp;Abbiamo perciò analizzato i dati provenienti dal World Happiness Report, un’indagine promossa dalle Nazioni Unite riguardante lo stato della felicità mondiale. Il primo report risale al 2012, seguito poi dai report del 2013, 2015, 2016 e infine 2017. La ricerca analizza 155 paesi, utilizzando svariati indicatori per stabilire il livello di felicità di ciascuna nazione. Il report ha guadagnato nel corso del tempo un certo riconoscimento a livello mondiale, venendo preso in considerazione da governi, organizzazioni di vario genere e società civile, accrescendo la consapevolezza sul tema e stimolando sempre più l’uso di indicatori di felicità per orientare l’azione politica. In breve tempo il World Happiness Report è diventato un modo per sincerarsi del progresso di un dato paese, dando prova di come i dati possano generare consapevolezza informando le decisioni dei policy makers.<br>&nbsp;&nbsp;Abbiamo deciso di mostrare questi dati su un coropleto per ottenere una distribuzione visibile della felicità nel mondo. La misura di felicità, sulla base del quale il grafico è stato costruito, è detta “Happiness score” e si base sulle risposte date dagli intervistati ad alcune domande riguardo la valutazione della propria vita. La domanda principale chiedeva di immaginare su una scala da 1 a 10 la migliore vita possibile e quella peggiore, posizionando poi la propria tra i due estremi. Oltre all’Happiness Score rilevato nell’indagine, per avere una visione più completa del fenomeno, abbiamo voluto integrare anche altri dati quali il GDP, il tasso di fertilità di ciascun paese e infine la relativa aspettativa di vita. Il coropleto è un comodo strumento per poter esplorare come i diversi paesi del mondo vengono valutati rispetto ai vari parametri e può essere esplorato ricercando una visione di insieme (tutto il mondo o ampie regioni), interessandosi alla classifica della felicità, resa immediatamente percepibile dal bar chart laterale oppure ricercando un paese specifico verso il quale si ha qualche curiosità.<br>&nbsp;&nbsp;Infine abbiamo voluto dividere visivamente i paesi in due gruppi tramite l’uso dei colori: un gruppo di paesi che si posizionano al di sotto di un valore centrale e un gruppo di paesi che si posiziona al di sopra.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Prima Visualizzazione -->
+      <div class="container viz">
+        <div class="row">
+         <div class='tableauPlaceholder' id='viz1528747955276' style='position: relative'><noscript><a href='#'><img alt='Storia mappe ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;Happinessmap_1&#47;Storiamappe&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Happinessmap_1&#47;Storiamappe' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;Happinessmap_1&#47;Storiamappe&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1528747955276');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1305px';vizElement.style.height='1022px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+
+
+      <br><br>
+
+      <!-- Secondo blocco di testo -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h5></h5>
+            <p>&nbsp;&nbsp;Al netto di alcune sorprese  (Italia posizionata nella metà infelice pur con una situazione economica abbastanza favorevole) risulta subito evidente che paesi con un GDP più alto tendono ad avere un più alto livello di felicità. Il dato appare evidente guardando a un occidente molto più felice rispetto al resto del mondo. Risulta poi notevole l’incidenza della fertilità, più alta in tutti i paesi con GDP e Felicità più bassa.<br>&nbsp;&nbsp;Per approfondire queste relazioni tra variabili abbiamo costruito una visualizzazione che permettesse di fornire un confronto tra classifiche riguardanti i quattro parametri. Di volta in volta i due assi verticali paralleli ordinano i paesi sulla base di due dei quattro indicatori considerati. Le linee che tagliano al centro unendo le due classifiche vanno ad associare la posizione di un paese tra i due ranking mostrando gli spostamenti tra una classifica e l’altra. Questo confronto è stato fatto per tutte le possibili combinazioni.<br>&nbsp;&nbsp;Per fare un esempio, come si comportano i paesi ben posizionati nel GDP riguardo invece alla felicità? Il grafico sotto mostra le variazioni di questa classifica. E scopriamo quindi che la Somalia si fa protagonista di un notevole recupero di ben 77 posizioni tra una classifica e l’altra: 154esima per GDP ma 77esima per felicità. Segno che, pur disponendo di scarse risorse economiche, si può comunque avere un paese sufficientemente felice.<br>&nbsp;&nbsp;Diverso è invece il caso della Grecia, che partendo da una dignitosa posizione nella classifica economica (38esima) converte male le sue risorse, posizionandosi in basso alla classifica di chi vive più felicemente (posizione 103), con una perdita di ben 65 posizioni. Lo stesso discorso può essere applicato agli altri confronti tra classifiche.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Seconda Visualizzazione -->
+      <div class="container viz">
+        <div class="row">
+          <div class='tableauPlaceholder' id='viz1528748448372' style='position: relative'><noscript><a href='#'><img alt='Storia righe ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;Happinessconfrontofraclassifiche&#47;Storiarighe&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Happinessconfrontofraclassifiche&#47;Storiarighe' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;Happinessconfrontofraclassifiche&#47;Storiarighe&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1528748448372');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1305px';vizElement.style.height='1022px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+      </div>
+
+
+
+
+      <!-- Terzo blocco di testo -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h5></h5>
+            <p>&nbsp;&nbsp;Questa visualizzazione mostra il suo profilo migliore nel momento in cui ad essere confrontato con gli altri parametri è il Fertility Rate. Le numerose intersezioni delle linee ci mostrano come ad alti livelli di fertilità corrispondano bassi livelli di felicità, di GDP e di aspettativa di vita. Questo sembrerebbe andare in controtendenza rispetto all’opinione diffusa per cui in alcuni paesi il motivo principale della scarsa fertilità sia la mancanza di assistenza alle famiglie e di welfare. E’ sufficiente ricordare a titolo d’esempio l’ondata di indignazione che emerse nel settembre 2016 come reazione alla campagna del Fertily Day promossa dal ministero della salute, riguardante la sensibilizzazione al tema della scarsa fertilità del nostro paese. In quel caso molti sottolinearono l’ironia di un governo che suggeriva ai propri cittadini di avere figli pur non garantendo un livello di welfare considerato come accettabile. Di fatto i paesi dove è presente più benessere sono quelli meno fertili e questo sembrerebbe, ad un primo sguardo, contraddire quelle critiche. Chiaramente il tema è complesso e non è detto che quanto suggerito dal grafico non possa essere dovuto a variabili intervenienti, ci limitamo a riportare la visualizzazione e a mostrare come di fatto il benessere correli negativamente con la fertilità di un paese. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="howTo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-2">
+              
+              <!-- In questa parte descrivere il processo di raccolta, pulizia e visualizzazione dei dati. Che tipo di dati avevo? Che tipo di operazioni sono state effettuate per poter visualizzare i dati. Come si leggono le visualizzazioni?-->
+              <h5 class=titoli_footer>Note metodologiche</h5>
+              <br><h2>DATASET</h2><p>&nbsp;&nbsp;Per effettuare la nostra analisi siamo partiti da tre dataset presenti sulla piattaforma Kaggle e rappresentanti i World Happiness Reports di tre anni: 2015, 2016 e 2017. Dopo averli uniti in unico dataset abbiamo deciso di utilizzare le variabili “Country”, “Region”, “Happiness Rank”, “Happiness Score” ed “Year” a cui sono state poi aggiunte, al fine di mostrare un’analisi più completa, le variabili “GDP” (per capita), “Fertility Rate” e “Life Expectancy” recuperate dalle fonti citate nell’apposita sezione sulla destra. Da questi nuovi indicatori sono state create poi, semplicemente tramite un ordinamento decrescente su Excel, le variabili “GDP Rank”, “Fertility Rate Rank” e “Life Expectancy Rank”.</p> 
+              <br><h2>COROPLETO</h2><p>&nbsp;&nbsp;La nostra prima visualizzazione, ottenuta tramite il software Tableau, è l’unione di una mappa coropletica e di un barchart. Abbiamo riprodotto la visualizzazione per tutte le variabili di nostro interesse, rispettivamente “Happiness”, “GDP”, “Fertility Rate” e “Life Expectancy”. Si è scelto come grafico principale il coropleto in quanto ben si prestava alla rappresentazione dei nostri dati: mostrare la distribuzione della variabile selezionata per più di 150 paesi su una mappa.<br>&nbsp;&nbsp;In alto a destra, nel riquadro bordato, è presente una breve legenda: essa indica la variabile target che si vuole visualizzare, il valore centrale scelto per tale distribuzione e una scala di colore che parte dall’arancione per arrivare al blu (con i loro vari livelli di intensità). La scala di colore inverten la tinta per i valori che si discostano negativamente (arancione) e positivamente (blu) dal valore centrale prescelto. Per tutte e 4 le variabili osservate viene scelto come valore centrale la mediana in quanto misura robusta, al contrario della media che è influenzata dalla presenza di outlier; solamente per “Happiness Score” viene scelto il valore 6, in quanto in una scala da 0 a 10 al fine di valutare la propria felicità percepita 6 ci è sembrato essere il valore rappresentante la sufficienza.<br>&nbsp;&nbsp;Puntando il cursore su una singola country nella mappa compaiono i details per tale paese, ovvero rispettivamente “Country”, “Region”, “Rank del paese per tale variabile” e “Valore reale di tale paese per tale variabile”. Se la mappa coropletica ben si presta a mostrare la distribuzione della variabile all’interno del globo, non è però altrettanto efficace nel far capire immediatamente la classifica dei vari paesi per la variabile scelta. Per questo viene aggiunto un barchart, dove sull’asse delle x troviamo il valore reale della variabile a cui si sottrae il valore centrale prescelto, mentre sull’asse delle y troviamo i paesi. E’ così possibile notare immediatamente la classifica. Il barchart presenta inoltre la stessa scala colore della mappa e gli stessi details.  Peculiarità del barchart creato è la presenza di un’inversione di segno: le barre da positive diventano negative quando, scendendo di posizioni all’interno della classifica, i vari paesi iniziano ad avere un valore inferiore rispetto a quello centrale prescelto. Quest’inversione di tendenza rafforza quanto già indicato dai colori, ovvero quali paesi si ritengono “felici”, quali paesi hanno un “buon” pil pro capite, quali paesi hanno un alto fertility rate e infine quali un’alta aspettativa di vita.<br>&nbsp;&nbsp; Entrambi i grafici sono interattivi e quindi è possibile filtrarli per “anno” e “regione di interesse”, grazie ai filtri è possibile visualizzare sulla mappa quanti e quali siano i paesi “felici” in Asia nel 2015 e sul barchart osservare la classifica all’interno della regione scelta. E’ stato inserito inoltre un highlighter che fornisce la possibilità di digitare il nome di un singolo paese con la possibilità quindi di individuarlo sia sulla mappa che all’interno della classifica rappresentata attraverso il barchart.</p><br>
+          	  <h2>CONFRONTO FRA CLASSIFICHE</h2><p>&nbsp;&nbsp;La seconda visualizzazione di cui ci siamo voluti servire al fine di rappresentare al meglio ciò che volevamo dire coi dati è un grafico a coordinate parallele tramite il quale confrontare le classifiche: vengono poste su due assi delle x paralleli le variabili utilizzate in precedenza (Happiness Score, GDP, Fertility Rate e Life Expectancy) a due a due, mentre sull’asse delle y è visibile il rank (un numero da 1 a 161, ovvero il numero di paesi presenti nel dataset). Ogni linea unisce ciascun paese su una classifica con  sé stesso nell'altra classifica, è così possibile confrontare la posizione in classifica di un paese per quanto riguarda “GDP” ed “Happiness” e vedere se tra le due variabili c’è un andamento lineare o meno. Viene poi creata la variabile “Lost/Scaled Positions” semplicemente sottraendo al rank della variabile posta a sinistra il rank di quella posta a destra così da individuare un incremento/decremento di posizioni in classifica. Questa nuova variabile viene poi inserita graficamente come colore, cosicchè se una country ha scalato delle posizioni presenterà una linea di colore blu, mentre se avrà perso delle posizioni presenterà una tonalità arancione (il livello di intensità del colore dipende dal numero di posizioni guadagnate o perse, maggiori esse sono più il colore risulterà intenso).<br>&nbsp;&nbsp;In alto sulla destra è presente una legenda; come filtri sono stati scelti “Year” e “Region” mentre come  highlighter “Country”. I details sono rispettivamente, in ordine, “Country”, “Variabili d’interesse”, "Region" e “Lost/Scaled Positions”. E’ presente inoltre una caption al fine di rendere la visualizzazione più facile da interpretare.<br><!--&nbsp;&nbsp;Mentre la seconda visualizzazione mostra una fotografia statica di come i vari indicatori si influenzino a vicenda, nella terza si è voluto mostrare l’andamento di tali variabili nei tre anni (per ogni country, grazie ad un filtro) e le relative “correlazioni” tra di esse (p.e. all’incremento di una variabile tra due anni corrisponde un incremento/decremento di un’altra?). A tal fine si è utilizzato un grafico a linee temporali dove sull’asse delle y son stati posti i tre anni di cui si compone il nostro dataset mentre sull’asse delle y i valori assunti dalle nostre variabili d’interesse “Happiness Score”, “GDP”, “Fertility Rate” e “Life Expectancy” per la contry selezionata. Le variabili sono state poi normalizzate, la motivazione e la formula utilizzata sono presenti all’interno di una caption così che il lettore possa comprendere al meglio la visualizzazione proposta. Le tinte di colori utilizzate vengono assegnate alle quattro variabili d’interesse così che il lettore possa differenziarle tra di loro. Infine, come details, vengono inseriti il “nome della variabile” e la “country”.--></p>
+              
+              <br><hr><br>
+
+              <!-- Seguire indicazioni prof Cabitza. Aggiungere immagini con taf img se necessario-->
+              <h5 class=titoli_footer>Euristiche considerate</h5>
+              <br>
+              <p>&nbsp;&nbsp;Nel costruire le infografiche abbiamo seguito alcune euristiche utili a orientare il nostro lavoro. Tra le principali:<br><br>
+
+			  &nbsp;&nbsp;Overview: abbiamo cercando di rendere le nostre infografiche sintetiche e intuitive. Soprattutto la prima, ma anche la seconda offrono una visione d’insieme che mostrano un’idea del fenomeno considerato.<br>
+			  &nbsp;&nbsp;Filtrare: attraverso le barre laterali è possibile scandagliare i dati selezionando quelli di maggiore interesse. E' possibile filtrare per anno, per paese o per regione.<br>
+			  &nbsp;&nbsp;Details-on-demand: la selezione di un oggetto permette di ottenere una notevole mole di informazioni, estraendi un elemento dalla visione di insieme più generica.<br>
+			  &nbsp;&nbsp;Estrazione: possibilità di estrarre dei dati in un formato alternativo ed eseguire il download completo del dataset.</p>
+              
+              <br><hr><br>
+              
+              <h5 class=titoli_footer>Valutazione qualità</h5>
+              <br>
+              <p>&nbsp;&nbsp;Abbiamo valutato empiricamente la qualità delle due visualizzazioni inserite nell'articolo coinvolgendo direttamente un campione di potenziali utenti tramite un doppio protocollo di misura diretta ed indiretta between group.<br><br>1) la misura diretta della fruibilità delle visualizzazioni è stata ottenuta sottoponendo ai soggetti un compito da svolgersi utilizzando i grafici. Abbiamo dunque misurato il tempo impiegato e registrato gli eventuali errori.<br><br>2) la misura indiretta dell'apprezzamento percepito delle visualizzazioni è stata invece ottenuta tramite la somministrazione di un veloce questionario basato su scale Likert.<br><br>&nbsp;&nbsp;Il compito e il questionario sono stati sottoposti in successione per entrambe le visualizzazioni, ciascun soggetto ha dunque svolto in quest'ordine: il compito sul cartogramma, il relativo questionario, il compito sul confronto tra classifiche e il relativo questionario. Prima di ciascun compito è stato dato circa un minuto ai soggetti per prendere confidenza con la visualizzazione corrispondente al compito. L'esatta copia del testo ricevuto dai soggetti è tra i materiali da scaricare sulla destra.</p>
+
+              <hr>
+
+              <h2>IPOTESI</h2>
+              <p>&nbsp;&nbsp;Nel contesto della valutazione della qualità delle nostre visualizzazioni abbiamo voluto verifificare se ci fosse o meno una differenza significativa fra utenti più o meno abituati all'utilizzo di grafici e al trattamento di dati rispetto ai tempi di esecuzione del compito, agli errori compiuti e alle risposte fornite al questionario di apprezzamento. Per far questo abbiamo suddiviso i nostri soggetti in due gruppi, il primo composto da studenti della magistrale di psicologia sociale della Bicocca e da studenti TTC (includendo solo studenti TTC che non hanno inserito l'esame di Data Visualisation nel piano di studi). Questo primo insieme di studenti corrispondeva al gruppo verosimilmente meno esperto. Il secondo gruppo era invece composto da studenti della magistrale di informatica e da studenti di DS e corrisponeva al gruppo più esperto.<br>&nbsp;&nbsp;Abbiamo inoltre confrontato i tempi di esecuzione di entrambi i gruppi con un tempo di esecuzione ideale. Per ottenere il tempo ideale di esecuzione quattro di noi hanno svolto per tre volte gli stessi compiti presentati ai soggetti per entrambe le visualizzazioni. La prima volta con l'istruzione di svolgere il compito il più velocemente possibile, la seconda di svolgerlo con naturalezza, la terza di svolgerlo in modo volutamente esitante. La media del tempo impiegato in tutte le modalità per tutti e 4 i creatori dei grafici coinvolti è una misura indiretta del tempo ideale di svolgimento del compito.</p>
+
+              <hr>
+
+              <h2>SOGGETTI E MATERIALI</h2>
+              <p>&nbsp;&nbsp;I soggetti coinvolti sono tutti studenti della Bicocca di età compresa tra i 22 e i 29 anni suddivisi in 17 donne e 15 uomini per un totale di 32 persone. I soggetti si suddividono inoltre sulla base della facoltà di appartenenza per consentirci di indagare la nostra ipotesi: 8 DS, 8 informatici, 8 TTC e 8 PPSDCE. La suddivisione di uomini e donne rispetto al fattore "facoltà" è stato il più possibile pareggiata, ma generalmente non ci sono considerazioni teoriche che possano farci immaginare un'influenza di questo fattore.<br>&nbsp;&nbsp;I grafici sono stati presentati ai soggetti dallo schermo di un computer per mantenerne l'interattività, mentre il questionario è stato volutamente stampato in modo da consentire ai soggetti di poter avere sempre davanti sia le domande che i grafici senza dover alternare lo spazio di risposta e le dashboard sullo schermo.</p>
+
+              <hr>
+
+              <h2>TEST UTENTE</h2>
+              <p>&nbsp;&nbsp;Per ciascuna delle due dashboard è stato sottoposto ai soggetti un compito, ciascuno dei due compiti consisteva nel rispondere a due domande puntuali la cui risposta era da trovarsi nei grafici stessi. Le domande sono state pensate per obbligare i soggetti ad interagire con le visualizzazioni, ad usare i filtri e le varie componenti della dashboard, inoltre, per ciascuna delle domande, si poteva cercare la risposta tramite diverse modalità di interazione, ma alcune interazioni erano chiaramente più efficenti e consentivano di arrivare più velocemente all'informazione richiesta.<br>&nbsp;&nbsp;Per testare l'ipotesi dell'esistenza di una differenza nei tempi di esecuzione tra i due gruppi (esperti/inesperti) abbiamo eseguito un t-test per campioni indipendenti sui tempi di entrambi i compiti, ma non è emersa nessuna differenza significativa (t=0,858 p=0,19 per il cartogramma. t=1,486 p=0,07 per il confronto fra classifiche). Abbiamo poi analizzato la correttezza delle risposte cercando differenze tra i due gruppi tramite l'utilizzo di tabelle di contengenza. Prima abbiamo eseguito il test di Fisher su 4 diverse tabelle di contingenza 2X2 contentenenti su un asse sempre i due livelli di esperienza e sull'altro il numero di riposte giuste e sbagliate alle 4 domande (ricordiamo che i compiti sono 2 con 2 domande a compito). Nessuno dei 4 test di Fisher ha mostrato differenze significative (per le due domande del compito sul cartogramma p=0,5 e p=0,34 mentre per le due domande sul confronto tra classifiche p=0,23 e p=0,5). Abbiamo poi eseguito il test di Fisher sulle due tabelle di contingenza contenenti su un asse i due livelli di esperienza e sull'altro il numero di errori e di risposte giuste per entrambe le domande di ciascun compito. Anche in questo caso non sono emerse differenze significative né per il cartogramma (p=0,5), né per il confronto fra classifiche (p=0,38).<br>&nbsp;&nbsp;Nei grafici 1 e 2 trovate visualizzato il tempo impiegato per i due compiti suddiviso per livello di esperienza e per numero di risposte corrette che vanno da 0 a 2 essendoci 2 domande per compito (nessuno ha dato zero risposte corrette al compito sul confronto tra classifiche). Nella parte destra del grafico trovate la media del tempo impiegato dagli utenti esperti, la media per gli inesperti e la media di esecuzione ideale (100 secondi per il cocopleto, 108 seondi per il confronto fra classifiche).
+              <br><br>
+              Grafico 1
+              <img src="media/violin1.png">
+              <br><br>
+              Grafico 2
+              <img src="media/violin2.png">
+              <br><br>
+              Nell'analizzare i dati ci siamo accorti che c'erano grandi differenze nei tempi di risposta tra le risposte date al compito sul cartogramma e quelle date al compito sul confronto fra classifiche. Volendo quindi confrontare i tempi non rispetto ai due livelli di esperienza, ma rispetto al grafico testato abbiamo eseguito un t-test e questa differenza si è confermata essere significativa (t=-2,229 p=0,01). Sempre in quest'ottica abbiamo anche confrontato il numero di errori con un test di Fisher su una tabella di contingenza 2X2 contenente su un asse il compito  e sull'altro asse risposte giuste e sbagliate (sommando entrambe le domande per ciascun compito), ma non sono emerse differenze significative (p=0,5). Nel grafico 3 si possono visualizzare i tempi di risposta suddivisi per compito e livello di esperienza con le corrispettive medie effettive ed ideali corrispondenti a ciascun compito.
+              <br><br>
+              Grafico 3
+              <img src="media/violin3.png">
+              <br></p>
+
+              <hr>
+
+              <h2>QUESTIONARI PSICOMETRICI</h2>
+              <p>&nbsp;&nbsp;Dopo ciascuno dei due compiti ai soggetti è stato chiesto di compilare un questionario di gradimento relativo alla visualizzazione corrispondente. Il questionario consisteva in 6 item (utile, intuitiva, chiara, informativa, bella, valore complessivo) presentati tramite una scala Likert a 5 livelli. Si è scelto consapevolmente di utilizzare una scala Likert dispari perché riteniamo che forzare la polarizzazione delle risposte tramite una scala pari sia troppo poco ecologico nonostante appaia indubbiamente come una scelta comoda per ottenere dati più chiari ed orientati.<br>&nbsp;&nbsp;Per indagare la nostra ipotesi secondo la quale dovrebbero emergere differenze nelle risposte ai questionari sulla base del livello di esperienza abbiamo eseguito un test di Mann-Whitney per ciascuno degli item di ciascun questionario ottenendo risultati siginificativi solo per l'item di intuitività usato nella valutazione del cartogramma (Ua=179 p=0,02)<br>&nbsp;&nbsp;Infine considerando le risposte da 1 a 3 (incluso) come risposte negative e i 4 e 5 come risposte positive possiamo trasformare le risposte ai diversi item in variabili dicotomiche e fare un test della binomiale per valutare la polarizzazione. Così facendo abbiamo verificato che la maggior parte degli item per entrambi i questionati si sono dimostrati polarizzati positivamente con l'eccezione di "intuitiva", "chiara" e "bella" per il confronto fra classifiche che però non risultano polarizzati neanche negativamente (per il questionario sul coropleto abbiamo: utile p<0,01 0,906 vs 0,093; intuitiva p<0,01 0,875 vs 0,125; chiara p<0,01 0,875 vs 0,125; informativa p<0,01 0,968 vs 0,031; bella p<0,01 0,906 vs 0,093; complessiva p<0,01 0,937 vs 0,062. Il questionario sul confronto tra classifiche invece ci dà: utile p<0,01 0,937 vs 0,062; intuitiva p=0,29 0,437 vs 0,562; chiara p=0,43 0,531 vs 0,468; informativa p<0,01 0,843 vs 0,156; bella p=0,10 0,625 vs 0,312; complessiva p<0,01 0,781 vs 0,218).<br>&nbsp;&nbsp;Nei grafici 4 e 5 si può visualizzare la percentuale di risposte positive (4-5), negative (1-2) e neutre (3) di tutti i soggetti coinvolti per i due questionari.
+              <br><br>
+              Grafico 4
+              <img src="media/valutazione psicometrica coropleto.png" class=barchart>
+              <br><br>
+              Grafico 5
+              <img src="media/valutazione psicometrica confronto fra classifiche.png" class=barchart>
+              <br><br>
+              &nbsp;&nbsp;Nei grafici 6, 7, 8 e 9 invece la percentuale di risposte è suddivisa in base ai due livelli di esperienza
+              <br><br>
+              Grafico 6
+              <img src="media/valutazione psicometrica coropleto (utenti esperti).png" class=barchart>
+              <br><br>
+              Grafico 7
+              <img src="media/valutazione psicometrica coropleto (utenti inesperti).png" class=barchart>
+              <br><br>
+              Grafico 8
+              <img src="media/valutazione psicometrica confronto fra classifiche (utenti esperti).png" class=barchart>
+              <br><br>
+              Grafico 9
+              <img src="media/valutazione psicometrica confronto fra classifiche (utenti inesperti).png" class=barchart>
+              <br><br>
+          	  &nbsp;&nbsp;Per concludere le analisi abbiamo voluto esplorare eventuali correlazioni tra gli item del questionario e visualizzare la matrice di correlazione tramite un correlogramma (grafico 10 per il coropleto, grafico 11 per il confronto fra classifiche). Per il coropleto le correlazioni tra item significative sono: valutazione complessiva-utilità (p=0.01), valutazione complessiva-intuitività (p=<0.01), valutazione complessiva-chiarezza (p<0,01) e intuitività-chiarezza (p<0,01). Per il confronto fra classifiche le correlazioni significative sono: valore complessivo-intuitività (p<0,01), valore complessivo-chiarezza (p<0,01) e intuitività-chiarezza p(<0,01) e utilità-informatività (p=0,01). Il valore della correlazione e la sua direzione potete osservarla nei grafici.
+          	  <br><br>
+              Grafico 10
+              <img src="media/corrplot_m.png" class=barchart>
+              <br><br>
+              Grafico 11
+              <img src="media/corrplot_c.png" class=barchart>
+          	  </p>
+
+              </div>
+
+
+
+
+
+
+            <!-- Inserire i link di google spreadsheet/drive o i link ai file dentro la cartella data (ridotti possibilmente - max 5mb) al posto di # e dare un nome ai dataset.-->
+            <div class="col-md-3 col-md-offset-1 howToSide">
+            <h5>Dati utilizzati</h5>
+            <p><a href="https://drive.google.com/open?id=1F4wD6yR0IcaB5ZQZu2p4opTXiALCogSC">Dataset</a></p>
+
+            <!-- Inserire i link agli strumenti utilizzati per la gestione dei dati e per la visualizzazione-->
+            <h5 id="tools">Fonti</h5>
+            <p><a href="https://www.kaggle.com/unsdsn/world-happiness">Kaggle Dataset</a></p>
+            <p><a href="http://www.worldbank.org/">GDP info</a></p>
+            <p><a href="https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependencies_by_total_fertility_rate">Fertility Rate info</a></p>
+            <p><a href="https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy">Life Expectancy info</a></p>
+            
+            <h5 id="tools">Strumenti utilizzati</h5>
+            <p><a href="https://www.tableau.com/trial/tableau-software?utm_campaign_id=2017049&utm_campaign=Prospecting-CORE-ALL-ALL-ALL-ALL&utm_medium=Paid+Search&utm_source=Google+Search&utm_language=EN&utm_country=SoEUR-IT&kw=tableau&adgroup=CTX-Brand-Core-EN-E&adused=216751184093&matchtype=e&placement=&gclid=EAIaIQobChMIoqjj64aS2wIVCLvtCh0S3Q9uEAAYASAAEgIXMfD_BwE&gclsrc=aw.ds&dclid=CKCy5uyGktsCFdWUdwodHFQNHA">Tableau</a></p>
+            <p><a href="https://www.python.org/">Python</a></p>
+            <p><a href="https://www.rstudio.com/">R</a></p>
+            <p><a href="https://office.live.com/start/Excel.aspx?omkt=it-IT">Excel</a></p>
+
+            <h5 id="tools">Valutazione qualità</h5>
+            <p><a href=media/questionario.docx download>Compiti e questionari</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script>$(document).ready(function () {
+    var trigger = $('.hamburger'),
+    overlay = $('.overlay'),
+    isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+      $('#wrapper').toggleClass('toggled');
+    });
+  });
+  </script>
+
+</body>
+</html>
