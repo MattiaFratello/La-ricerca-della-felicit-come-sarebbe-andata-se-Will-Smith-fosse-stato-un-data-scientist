@@ -4,3 +4,6 @@ The project consists in the creation of a piece of data journalism, which must c
 realized by exploring and analyzing one or more data sets. 
 The piece of data journalism must be accompanied by an appendix assessment explaining how the visualizations were created,
 what heuristics were followed and how the audience reacted to them (via questionnaires).
+
+We used Python and Tableau for the creation of the Visualizations.
+The datasets used were extracted whith API or Web Scraping.
